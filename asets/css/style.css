@@ -1,0 +1,53 @@
+:root {
+  --main-bg: #0d0d0d;
+}
+body,
+html ,.nav-tab{
+  background-color: var(--main-bg);
+}
+input:focus {
+  color: #ff0000;
+}
+.logo {
+  width: 50px;
+}
+.loading-screen{
+  z-index: 999;
+  display: flex;
+}
+
+.inner-loading-screen{
+  position: absolute;
+  z-index: 9;
+  background-color: #0D0D0D;
+  display: flex;
+}
+.side-nav-menu{
+    z-index: 3;
+}
+.links > ul > li {
+  transition: all 0.5s ease-out;
+  top: 300px;
+}
+.links > ul > li:hover {
+  background-color: #fdcd0f71;
+}
+.food-img{
+  position: relative;
+  overflow: hidden;
+
+}
+ .food-img:hover .overlay {
+    top: 0;
+    /* background-color: #09c; */
+}
+
+.food-img .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #f9f6f6ca;
+  transition: all 0.6s ;
+  top: 100%;
+}
